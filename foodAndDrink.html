@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <header class="nav">
         <nav>
             <ul>
-                <li class="logo" ><img src="Bureau/Logo.png" alt="""></li>
+                <li class="logo" ><img src="Bureau/Logo.png" alt=""></li>
                 <li class="menu">Menu</li>
                 <li class="contact">Contact</li>
                 <li class="product_locaux">Producteur Locaux</li>
@@ -22,8 +22,8 @@
     </header>
     <main>
         <section>
-            <div class="menu">
-                <h1>Menu “Légumes” : 54 €</h1> 
+            <div class="menus">
+                <h2>Menu “Légumes” : 54 €</h2> 
                 <ul>
                     <li>Carpaccio de betteraves marinées au soja et gingembre</li> 
                     <li>Tourte feuilletée – céleri et truffe, jus concentré de légumes</li> 
@@ -32,9 +32,10 @@
                 </ul>
             </div>
         </section>
+
         <section>
-            <div class="menu">
-                <h1>Menu « Au rythme des saisons »: 71€</h1>
+            <div class="menus">
+                <h2>Menu « Au rythme des saisons »: 71€</h2>
                 <ul> 
                     <li>Foie-gras mi-cuit au sichuan</li> 
                     <li>Turbot rôti au ras el-hanout, chou-fleur et choux de bruxelles</li>
@@ -43,32 +44,95 @@
                 </ul>
             </div>
         </section>
+
         <section>
-            <span class="valeur"> blalblalbla</span>
+            <p class="valeurs"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit molestiae ipsa necessitatibus provident dolor itaque? Delectus debitis, quisquam laudantium natus aliquid rerum, molestiae excepturi itaque quasi iste commodi. Cupiditate, maxime!</p>
         </section>
+
         <section>
-            <h1>nos fournisseurs</h1>
-            <ul>
+            <h2>nos fournisseurs</h2>
+            <div class="liste-images-en-ligne">
                 <a href="https://www.amisdelaferme.fr/">
                     <img src="./img/les-amis-de-la-ferme-logo-1607704136.jpg" alt="logo les amis de la ferme">
                 </a>
                 <a href="https://www.cueillette-bio-rennes.fr/">
-                    <img src="./img/jardins-chataignier.jpg" alt="logo jardinsdu chataignier">
+                    <img src="./img/jardins-chataignier.jpg" alt="logo jardins du chataignier">
                 </a>
                 <a href="http://www.maisongesbert.com/">
                     <img src="./img/logo-boucherie-non-coupe-fo-1.png" alt="logo maison gesbert">
                 </a>
-            </ul>            
+            </div>            
         </section>
+
         <section>
-            <h1>nos références</h1>
             <ul>
-                
-            </ul>
+            <h2>nos références</h2>
+                <div class="liste-images-en-ligne">
+                    <a href="https://fr.gaultmillau.com/">
+                        <img src="./img/Gault-Millau.png" alt="logo gault-millau">
+                    </a>
+                    <a href="https://guide.michelin.com/fr/fr">
+                        <img src="./img/guide_michelin.jpg" alt="logo guide michelin">
+                    </a>
+                    <a href="https://www.tripadvisor.fr/">
+                        <img src="./img/logo-tripadvisor.png" alt="logo tripadvisor">
+                    </a>
+                </div>
         </section>
 
+        <section class="contact">
+            <div class="adresse">
+                <address>
+                    3 Rue de la Chalotais, 35000 Rennes
+                </address>
+                <a href="tel:+33123456789">🕿 01234567890</a>
+            </div>
+        </section>
 
-    </main>
+        <section class="mail">
+            <form action="" method="post">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="mail">e-mail&nbsp;:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div>
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <div>
+                    <input type="submit" name="envoyer">
+                </div>
+            </form>          
+         </section>
+
+        <section>
+            <img src="./img/carte.png" alt="carte localisation">
+        </section>
+        <div id="modal" class="hide" onclick="hidemodal()">
+            mentions légales
+           développeurs: Kenneth & Patrice
+           mail: kennetrice@gmail.com
+           hébergement: https://github.com
+        </div>
+        <a href="#" onclick="javascript:openmodal()">
+            Mentions légales
+        </a>
+    <script>
+        function openmodal(){
+            document.getElementById("modal").className += "show";
+        }
+        function hidemodal() {
+            document.getElementById("modal").className = document.getElementById("modal").className.replace('show', '');
+        }
+    </script>  
+    <style>
+       
+    </style>
+</main>
 
 </body>
 </html>
